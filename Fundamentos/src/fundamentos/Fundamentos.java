@@ -14,12 +14,13 @@ public class Fundamentos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // declaração de variáveis
+        // declaração de variáveis de tipos primitivos
         String nome = "Ellen";
         int idade = 16;
         boolean estudando = true;
         double media = 5.5;
         
+        String bairro = new String("Centro");
     }
     
 }
