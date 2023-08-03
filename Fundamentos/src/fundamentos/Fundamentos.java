@@ -22,7 +22,7 @@ public class Fundamentos {
         
         String bairro = new String("Centro");
         
-        // DEclaração de Wrappers (conversão)
+        // Declaração de Wrappers (conversão)
         int nota1 = Integer.parseInt("8");
         double mediaf = Double.parseDouble("5.5");
         boolean aprovado = Boolean.parseBoolean("true");
