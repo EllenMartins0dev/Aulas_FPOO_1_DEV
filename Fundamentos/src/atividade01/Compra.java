@@ -11,7 +11,6 @@ import java.util.Scanner;
  * @author Aluno
  */
 public class Compra {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -37,9 +36,9 @@ public class Compra {
         // calcula os descontos
         if (formaPagamento.equalsIgnoreCase("D")) {
             if (valorTotal <= 100.0) {
-                valorTotal = (valorTotal * 0.05) - valorTotal;
+                valorTotal = valorTotal -(valorTotal * 0.05) ;
             } else {
-                valorTotal = (valorTotal * 0.03) - valorTotal;
+                valorTotal = valorTotal - (valorTotal * 0.03) ;
             }
         }
 
