@@ -11,19 +11,25 @@ import java.util.Scanner;
  * @author Aluno
  */
 public class Multiplasnotas {
-    public static void main(String[] args) {   
-        Scanner scanner = new Scanner(System.in);
-        int rs = somar(4,8,2,1);
-        System.out.println("Resultado soma:" + rs);
-    }
-    // método estático (tem reticências pra mostrar que será passado vários valores)
-    public static int somar(int... valores){
-        int resultado = 0;
-        for (int i = 0; i < valores.length; i++) {
-            int valor = valores[i];
-            resultado += valor;     
-        }
-        return resultado;
-    }
-    }
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Digite a quantidade de notas: ");
+        int qtdadeNotas = scanner.nextInt();
+
+        double soma = 0;
+
+        for (int i = 1; i <= qtdadeNotas; i++) {
+            System.out.println("Digite o a nota " + i + ":");
+            // pega as notas
+            double resultado = scanner.nextDouble();
+            soma += resultado;
+        }
+
+        double media = soma / qtdadeNotas;
+        System.out.println("Media: " + media);
+        
+        scanner.close();
+    }
+}

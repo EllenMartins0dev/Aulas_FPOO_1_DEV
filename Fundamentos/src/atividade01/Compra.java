@@ -49,6 +49,9 @@ public class Compra {
             double valorParcela = valorTotal / qtdadeParcela;
             System.out.println("Valor da parcela:" + valorParcela);
         }
+        else {
+            System.out.println("Forma de pagamento inválida");
+        }
 
         // Exibe as informações
         System.out.println("Nome do produto:" + nomeProdto);
