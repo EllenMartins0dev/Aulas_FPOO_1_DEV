@@ -8,10 +8,50 @@ package enumeracao.atividades;
  *
  * @author Aluno
  */
-public class CantinaEnum {
-
+public class Enumeracao {
     public static void main(String[] args) {
-        Cantina produto1 = new Cantina("hamburguer", 29.90, TipoCantinaEnum.SOLICITADO.getStatus());
+        System.out.println("---- Atividade 1 ----");
+          Meses mes1 = new Meses(TipoMesesEnum.JANEIRO.getTipo());
+        System.out.println(mes1);
+          Meses mes2 = new Meses(TipoMesesEnum.FEVEREIRO.getTipo());
+        System.out.println(mes2);
+          Meses mes3 = new Meses(TipoMesesEnum.MARCO.getTipo());
+        System.out.println(mes3);
+           Meses mes4 = new Meses(TipoMesesEnum.ABRIL.getTipo());
+        System.out.println(mes4);
+           Meses mes5 = new Meses(TipoMesesEnum.MAIO.getTipo());
+        System.out.println(mes5);
+           Meses mes6 = new Meses(TipoMesesEnum.JUNHO.getTipo());
+        System.out.println(mes6);
+           Meses mes7 = new Meses(TipoMesesEnum.JULHO.getTipo());
+        System.out.println(mes7);
+           Meses mes8 = new Meses(TipoMesesEnum.AGOSTO.getTipo());
+        System.out.println(mes8);
+           Meses mes9 = new Meses(TipoMesesEnum.SETEMBRO.getTipo());
+        System.out.println(mes9);
+           Meses mes10 = new Meses(TipoMesesEnum.OUTUBRO.getTipo());
+        System.out.println(mes10);
+           Meses mes11 = new Meses(TipoMesesEnum.NOVEMBRO.getTipo());
+        System.out.println(mes11);
+           Meses mes12 = new Meses(TipoMesesEnum.DEZEMBRO.getTipo());
+        System.out.println(mes12);
+        
+        System.out.println(" ");
+        System.out.println("---- Atividade 2 ----");
+             Genero livro1 = new Genero("IT a coisa", "Stephen King", GeneroTipoEnum.TERROR.getStatus());
+        System.out.println(livro1);
+          Genero livro2 = new Genero("Animais fantasticos", "J. K. Rowling", GeneroTipoEnum.FICCAO.getStatus());
+        System.out.println(livro2);
+          Genero livro3 = new Genero("Cinderela", "Disney", GeneroTipoEnum.CONTODEFADAS.getStatus());
+        System.out.println(livro3);
+        Genero livro4 = new Genero("A Troca", "Beth O’leary", GeneroTipoEnum.COMEDIA.getStatus());
+        System.out.println(livro4);
+        Genero livro5 = new Genero("Sherlock Holmes", "Arthur Conan Doyle", GeneroTipoEnum.SUSPENSE.getStatus());
+        System.out.println(livro5);
+        
+        System.out.println(" ");
+        System.out.println("---- Atividade 3 ----");
+          Cantina produto1 = new Cantina("hamburguer", 29.90, TipoCantinaEnum.SOLICITADO.getStatus());
         System.out.println(produto1);
         produto1.setStatus(TipoCantinaEnum.PREPARANDO.getStatus());
         System.out.println(produto1);
@@ -67,5 +107,18 @@ public class CantinaEnum {
           produto8.setStatus(TipoCantinaEnum.PRONTO.getStatus());
         System.out.println(produto8);
         System.out.println("---------------------------------------------------------------------");
+        
+        System.out.println(" ");
+        System.out.println("---- Atividade 4 ----");
+           RedesSociais youtube = new RedesSociais("Youtube", 2000000000, TipoRedesSociaisEnum.ENTRETENIMENTO.getCategoria());
+        System.out.println(youtube);
+        RedesSociais instagram = new RedesSociais("Instagram", 113500000, TipoRedesSociaisEnum.ENTRETENIMENTO.getCategoria());
+        System.out.println(instagram);
+         RedesSociais whatsapp = new RedesSociais("Whatsapp", 1200000000, TipoRedesSociaisEnum.SOCIALIZACAO.getCategoria());
+        System.out.println(whatsapp);
+         RedesSociais twitter = new RedesSociais("Twitter", 238110000, TipoRedesSociaisEnum.CANCELAMENTO.getCategoria());
+        System.out.println(twitter);
+        
     }
+    
 }

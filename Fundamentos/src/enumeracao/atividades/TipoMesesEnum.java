@@ -10,5 +10,27 @@ package enumeracao.atividades;
  */
 
 public enum TipoMesesEnum {
-    JANEIRO, FEVEREIRO, MARCO, ABRIL, MAIO, JUNHO, JULHO, AGOSTO, SETEMBRO, OUTUBRO, NOVEMBRO, DEZEMBRO
+    JANEIRO("janeiro"), 
+    FEVEREIRO("fevereiro"),
+    MARCO("marco"), 
+    ABRIL("abril"),
+    MAIO("maio"), 
+    JUNHO("junho"), 
+    JULHO("julho"), 
+    AGOSTO("agosto"), 
+    SETEMBRO("setembro"), 
+    OUTUBRO("outubro"), 
+    NOVEMBRO("novembro"), 
+    DEZEMBRO("dezembro");
+    
+    private String tipo;
+
+    private TipoMesesEnum(String tipo) {
+        this.tipo = tipo;
+    }
+    
+    public String getTipo() {
+        return this.tipo;
+    }
+    
 }

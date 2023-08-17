@@ -30,6 +30,4 @@ public class Pedido {
         return "Pedido{" + "descricao=" + descricao + ", valor=" + valor + ", status=" + status + '}';
     }
     
-    
-    
 }

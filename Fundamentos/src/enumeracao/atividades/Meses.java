@@ -10,18 +10,22 @@ package enumeracao.atividades;
  * @author Aluno
  */
 public class Meses {
-    private String meses;
-     private TipoMesesEnum tipo;
+     private String tipo;
 
-    public Meses(String meses, TipoMesesEnum tipo) {
-        this.meses = meses;
+    public Meses(String tipo) {
         this.tipo = tipo;
     }
 
+      public void setStatus(String status) {
+        this.tipo = tipo;
+    }
+    
     @Override
     public String toString() {
-        return "Meses{" + "meses=" + meses + ", tipo=" + tipo + '}';
+        return "Meses{" + "mes=" + tipo + '}';
     }
-     
+
+  
+
      
 }
