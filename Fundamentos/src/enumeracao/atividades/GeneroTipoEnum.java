@@ -18,14 +18,14 @@ import javax.management.openmbean.CompositeDataInvocationHandler;
         TERROR("terror"), 
         CONTODEFADAS("conto de fadas");
         
-         private String status;
+         private String genero;
 
-    private GeneroTipoEnum(String status) {
-        this.status = status;
+    private GeneroTipoEnum(String genero) {
+        this.genero = genero;
     }
     
     public String getStatus() {
-        return this.status;
+        return this.genero;
     }
     
 }

@@ -21,6 +21,12 @@ public class GeneroEnum {
           Genero livro3 = new Genero("Cinderela", "Disney", GeneroTipoEnum.CONTODEFADAS.getStatus());
         System.out.println(livro3);
         
+        Genero livro4 = new Genero("A Troca", "Beth O’leary", GeneroTipoEnum.COMEDIA.getStatus());
+        System.out.println(livro4);
+        
+        Genero livro5 = new Genero("Sherlock Holmes", "Arthur Conan Doyle", GeneroTipoEnum.SUSPENSE.getStatus());
+        System.out.println(livro5);
+        
     
     }
 }
