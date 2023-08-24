@@ -33,9 +33,9 @@ public class Aluno {
     
     
     public void verificarEstudo(){
-        if (estudar = true) {
+        if (estudar == true) {
             System.out.println("Aluno esta estudando");
-        } else if (estudar = false) {
+        } else if (estudar == false) {
             System.out.println("Aluno terminou a atividade");
         }
         else {
