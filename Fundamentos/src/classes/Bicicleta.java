@@ -37,7 +37,7 @@ public class Bicicleta {
 
     
     
-    // Métodos (este você escreve a veloci8dade que seja no print)
+    // Métodos (este você escreve a velocidade que seja no print)
     public void andar(int velocidade) {
         this.situacao = "Andando";
         this.velocidade = velocidade;
