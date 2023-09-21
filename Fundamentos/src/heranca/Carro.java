@@ -15,4 +15,11 @@ public class Carro extends Veiculo {
         this.combustivel = combustivelEnum.getTipoCombustivel();
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\n" + "Carro{" + "qtdePortas = " + qtdePortas + ", modeloCambio = " + modeloCambio + ","
+                + " combustivel = " + combustivel + '}';
+    }
+
+    
 }
