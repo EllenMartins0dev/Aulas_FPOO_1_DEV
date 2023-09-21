@@ -1,21 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package heranca;
 
-/**
- *
- * @author Aluno
- */
-public class Carro {
+public class Carro extends Veiculo {
+
     private int qtdePortas;
     private String modeloCambio;
     private String combustivel;
 
-    public Carro(int qtdePortas, CambioEnum cambioEnum, String combustivel) {
+    // Construtor criado na classe-filha (do lado do nome da Classe) com os atributos da classe-base e os seus próprios
+    public Carro(String descricao, int ano, String cor, String modelo, String marca, double valor, boolean zerokm,
+            boolean freioAbs, int qtdePortas, CambioEnum cambioEnum, CombustivelEnum combustivelEnum) {
+        super(descricao, ano, cor, modelo, marca, valor, zerokm, freioAbs);
         this.qtdePortas = qtdePortas;
         this.modeloCambio = cambioEnum.getTipoCambio();
-        this.combustivel = combustivel;
+        this.combustivel = combustivelEnum.getTipoCombustivel();
     }
+
 }
