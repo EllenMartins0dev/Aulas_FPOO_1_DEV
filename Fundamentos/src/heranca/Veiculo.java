@@ -24,7 +24,8 @@ public class Veiculo {
 
     @Override
     public String toString() {
-        return "Veiculo{" + "descricao = " + descricao + ", ano = " + ano + ", cor = " + cor + ", modelo = " + modelo + ", marca = " + marca + ", valor = " + valor + ", zerokm = " + zerokm + ", freioAbs = " + freioAbs + '}';
+        return "Veiculo{" + "descricao = " + descricao + ", ano = " + ano + ", cor = " + cor + ", modelo = " + modelo + ","
+                + " marca = " + marca + ", valor = " + valor + ", zerokm = " + zerokm + ", freioAbs = " + freioAbs + '}';
     }
     
     
