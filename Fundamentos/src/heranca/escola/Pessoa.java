@@ -42,7 +42,7 @@ public class Pessoa implements ValidaPessoa{
 
     @Override
     public String toString() {
-        return "Pessoa{" + "nome=" + nome + ", email=" + email + ", idade=" + idade + ", cpf=" + cpf + '}';
+        return "Pessoa{" + "nome = " + nome + ", email = " + email + ", idade = " + idade + ", cpf = " + cpf + '}';
     }
 
 

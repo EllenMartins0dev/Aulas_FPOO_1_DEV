@@ -17,7 +17,7 @@ public class Aluno extends Pessoa {
 
     @Override
     public String toString() {
-        return super.toString() + "Aluno{" + "ra=" + ra + '}';
+        return super.toString() + "Aluno{" + "ra = " + ra + '}';
     }
 
     @Override
